@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".view.MemberDetail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MEMBER PROFILE"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:layout_marginBottom="@dimen/innerMargin"
+            android:textColor="#FFFF"/>
+        <ImageView
+            android:id="@+id/memberPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/anyujin"
+            android:adjustViewBounds="true"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/innerMargin"
+            android:layout_marginRight="@dimen/innerMargin"
+            android:layout_marginTop="@dimen/innerMargin"
+            android:layout_marginBottom="@dimen/innerMargin">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/innerMargin">
+                <TextView
+                    android:text="@string/full_name"
+                    style="@style/MemberDetail.Field"/>
+                <TextView />
+                <TextView
+                    android:id="@+id/tvFullName"
+                    tools:text="An Yujin"
+                    style="@style/MemberDetail.Value"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/innerMargin">
+                <TextView
+                    style="@style/MemberDetail.Field"
+                    android:text="@string/nickname"/>
+                <TextView />
+                <TextView
+                    android:id="@+id/tvNickName"
+                    style="@style/MemberDetail.Value"
+                    tools:text="Yujin"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/innerMargin">
+                <TextView
+
+                    style="@style/MemberDetail.Field"
+                    android:text="@string/rank"/>
+                <TextView />
+                <TextView
+                    android:id="@+id/tvRank"
+                    style="@style/MemberDetail.Value"
+                    tools:text="5"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/innerMargin">
+                <TextView
+                    style="@style/MemberDetail.Field"
+                    android:text="@string/date_of_birth"/>
+                <TextView />
+                <TextView
+                    android:id="@+id/tvDateOfBirth"
+                    style="@style/MemberDetail.Value"
+                    tools:text="September 1st 2003"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/innerMargin">
+                <TextView
+                    style="@style/MemberDetail.Field"
+                    android:text="@string/blood_type"/>
+                <TextView />
+                <TextView
+                    android:id="@+id/tvBloodType"
+                    style="@style/MemberDetail.Value"
+                    tools:text="A"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

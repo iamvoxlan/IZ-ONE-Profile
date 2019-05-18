@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/outerMargin">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/member_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:src="@drawable/anyujin"/>
+    <TextView
+        android:id="@+id/member_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerMargin"
+        android:layout_marginBottom="@dimen/innerMargin"
+        android:textSize="40sp"
+        android:layout_toRightOf="@id/member_image"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        tools:text="YUJIN"/>
+    <TextView
+        android:id="@+id/member_rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/member_image"
+        android:layout_below="@id/member_nickname"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        tools:text="RANK 5"/>
+
+</RelativeLayout>
